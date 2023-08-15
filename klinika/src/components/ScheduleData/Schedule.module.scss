@@ -1,0 +1,144 @@
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+.header {
+    font-size: 2rem;  
+    font-weight: 700;
+    margin: 2rem;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.table_schedule {
+    margin-top: 3rem;
+    border-collapse: collapse;
+    border: 1px solid rgba(14, 107, 212,0.7);
+    table-layout:fixed;
+}
+
+.head, .td_schedule {
+  padding: 15px;
+  border: 1px solid black;
+   overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+}
+
+.row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.head {
+  background-color: rgb(8, 184, 197);
+  color: white;
+}
+
+.table_content {
+    height: 29px;
+    width: 206px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 50px;
+    
+}
+
+.edit, .cancel, .save {
+    margin: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    padding: 7px;
+    transition: all 0.3s ease-in-out;
+}
+
+.save:hover ,.edit:hover,.cancel:hover {
+    cursor: pointer;
+    //border: 1px solid rgb(8, 184, 197);
+    color: rgb(14, 107, 212);
+    background-color: white;
+}
+
+.save {
+    background-color: rgb(6, 235, 44);
+}
+
+.save:hover {
+    color: rgb(6, 235, 44);
+    border: 1px solid rgb(6, 235, 44);
+}
+
+.edit {
+    background-color: rgb(8, 184, 197);
+}
+
+.edit:hover {
+    color: rgb(8, 184, 197);
+    border: 1px solid rgb(8, 184, 197);
+}
+
+.cancel {
+    background-color: red;
+}
+
+.cancel:hover {
+    color: red;
+    border: 1px solid red;
+}
+
+.goback {
+    display: flex;
+    justify-content: center;
+    color: rgb(8, 184, 197);  
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.goback:hover {
+    color: rgb(14, 107, 212);
+    
+}
+
+@media screen and (max-width:1120px) { 
+ .table_schedule {
+    width: 700px;
+    
+ }
+ .table_content {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+ }
+ input {
+    width: 100px;     
+ }
+}
+
+@media screen and (max-width:720px) {
+    .table_schedule {
+    width: 600px;
+    
+ }
+ .table_content {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+ }
+ input {
+    width: 70px;     
+ }
+}
+
