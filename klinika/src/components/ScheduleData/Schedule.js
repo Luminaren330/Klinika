@@ -19,7 +19,7 @@ const Schedule = (props) => {
       const arr = Object.entries(objArr);
       setSceduleArray(arr);
     } else window.location.replace("/schedule");
-  }, []);
+  }, [id, globalContext.scheduleArray]);
   const [changeSchedule, setChangeSchedule] = useState(false);
   const saveData = async (objData) => {
     const dataToSave = {};
@@ -95,6 +95,9 @@ const Schedule = (props) => {
                             </td>
                           </tr>
                         );
+                      else {
+                        return <></>;
+                      }
                     })}
                   </tbody>
                 )}
@@ -127,6 +130,7 @@ const Schedule = (props) => {
                             </td>
                           </tr>
                         );
+                      else return <></>;
                     })}
                   </tbody>
                 )}
